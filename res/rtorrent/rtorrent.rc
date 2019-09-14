@@ -12,7 +12,7 @@ port_random = no
 check_hash = yes
 
 # Enable DHT (for torrents without trackers)
-dht = on
+dht = auto
 dht_port = 6881
 peer_exchange = yes
 
@@ -25,9 +25,9 @@ encryption = allow_incoming,try_outgoing,enable_retry
 # Performance Tuning
 throttle.max_downloads.set = 100
 throttle.max_uploads.set = 100
-min_peers = 199
+min_peers = 40
 max_peers = 200
-pieces.memory.max.set = 4096M
+pieces.memory.max.set = 8048M
 check_hash = no
 
 # SCGI port, used to communicate with Flood
